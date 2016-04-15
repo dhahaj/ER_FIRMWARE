@@ -1,6 +1,7 @@
 # ER_FIRMWARE
 REVISION HISTORY:
-	8/21/2014: Release candidate version 5.0
+	8/21/2014: Release candidate version 5.1
+	9/13/2015: Rev 5.2 to fix a bug in the timing code found from DVPR1 testing
 
 Compilation Info: 
 	Define a symbol named EExER with a value of 1 to compile the code for the EExER build version. Set the value to 0 to build the standard ER build version.
