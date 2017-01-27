@@ -1,4 +1,7 @@
-# ER_FIRMWARE
+# PS8x FIRMWARE
+
+1/27/2017: TODO - modify the preprocessor code to keeep the interrupt code and instean use the preprocessor to turn off the pin change interrupts on certain pins. 
+
 REVISION HISTORY:
 	8/21/2014: Release candidate version 5.1
 	9/13/2015: Rev 5.2 to fix a bug in the timing code found from DVPR1 testing
