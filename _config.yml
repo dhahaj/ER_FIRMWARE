@@ -2,7 +2,7 @@ title: PS8x Firmware
 description: 
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: jekyll-theme-hacker
 
 gems:
   - jekyll-mentions
