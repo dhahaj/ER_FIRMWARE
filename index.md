@@ -1,12 +1,14 @@
-PS8x FIRMWARE
+#PS8x FIRMWARE
 
-1/27/2017: TODO - modify the preprocessor code to keeep the interrupt code and instean use the preprocessor to turn off the pin change interrupts on certain pins.
+:bulb: 
+*1/27/2017: TODO - modify the preprocessor code to keeep the interrupt code and instean use the preprocessor to turn off the pin change interrupts on certain pins.*
 
-origin/master REVISION HISTORY: 8/21/2014: Release candidate version 5.1 9/13/2015: Rev 5.2 to fix a bug in the timing code found from DVPR1 testing
+##origin/master REVISION HISTORY 8/21/2014:
+Release candidate version 5.1 9/13/2015: Rev 5.2 to fix a bug in the timing code found from DVPR1 testing
 Compilation Info:
 Define a symbol named EExER with a value of 1 to compile the code for the EExER build version. Set the value to 0 to build the standard ER build version.
 
-Build Versions:
+##Build Versions:
 EExER - This build essentially removes most of the features found in the ER code as it is not required. More specifically, no DIP setting features and trigger Relay1 before triggering the rest of the outputs. ER - This version is compiled to be the standard ER firmware with the ability to use the entire feature set (e.g. the DIP switch settings). It allows for Dependent/Independent operation on dual doors, Active High/Low outputs, and Toggling features. The DIP switches are interrupt driven so changes are implemented immediately and the system auto adjusts depending on its current state. The order of events upon a trigger event is as follows:
 
 Mode Definitions:
@@ -32,5 +34,5 @@ TODO: Implement self testing features or write separate code for system testing 
 
 *This software was developed using Atmel Studio 7.0 IDE and compiled with the bundled AVR toolchain.
 
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new `gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.
+This site was built using [GitHub Pages](https://pages.github.com/).
+
