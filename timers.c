@@ -2,8 +2,8 @@
 * timers.c --> Code for reading the timing selection switches
 *
 * Created: 11/14/2012 8:57 AM
-* Modified: 8/20/2014 9:17 AM
-*  Author: DMH
+* Modified: 7/30/2015 12:29 PM
+* Author: DMH
 *
 */
 
