@@ -18,20 +18,20 @@
 #endif
 
 /*
-DOOR I/O :		*/
+DOOR I/O : 	*/
 #define OUTPUT_PORT		PORTB	// Output port for Door1/2
-#define DOOR_PIN_PORT	PINB	// Door 1/2 Pins
+#define DOOR_PIN_PORT		PINB	// Door 1/2 Pins
 #define OUTPUT_DDR		DDRB	// Door 1/2 Data Direction Register
-#define DR1_OUT			PB0		// Door 1 Output Pin
-#define DR2_OUT			PB1		// Door 2 Output Pin
+#define DR1_OUT			PB0	// Door 1 Output Pin
+#define DR2_OUT			PB1	// Door 2 Output Pin
 
 /*
-RELAY I/O:		*/
+RELAY I/O: 	*/
 #define RELAY_PORT		PORTA	// Relays 1/2 Output port
-#define RELAY_PIN_PORT	PINA	// Relays 1/2 Input Pins
+#define RELAY_PIN_PORT		PINA	// Relays 1/2 Input Pins
 #define RELAY_DDR		DDRA	// Relays 1/2 Data Direction Register
-#define RELAY1_PIN		PA0		// Relay 1 Output Pin
-#define RELAY2_PIN		PA1		// Relay 2 Output Pin
+#define RELAY1_PIN		PA0	// Relay 1 Output Pin
+#define RELAY2_PIN		PA1	// Relay 2 Output Pin
 
 /*
 DOOR TRIGGER INPUTS:		*/
@@ -44,9 +44,9 @@ DIP SWITCHES:		*/
 #define DR1_BUTTON			PIND2	// Door 1 Input Pin
 #define DR2_BUTTON			PIND3	// Door 2 Input Pin
 #define MODE_PIN			PIND0	// Mode selection pin
-#define ACTIVE_MODE1_PIN	PIND4	// Active Mode Pin for Door 1
+#define ACTIVE_MODE1_PIN		PIND4	// Active Mode Pin for Door 1
 #define TOGGLE1_PIN			PIND1	// Toggle Mode pin for Door 1
-#define ACTIVE_MODE2_PIN	PIND7	// Active Mode Pin for Door 2
+#define ACTIVE_MODE2_PIN		PIND7	// Active Mode Pin for Door 2
 #define TOGGLE2_PIN			PIND6	// Toggle Mode pin for Door 2
 
 /*
@@ -63,11 +63,11 @@ VARIOUS DEFINITIONS:		*/
 #define DIFF_DELAY		300UL	// Differential Delay Time between door retractions(ms)
 #define SIG_DELAY		100UL	// Delay Time between activating the relay signals(ms)
 #define EExER_DELAY		500UL	// Delay for the EExER build option
-#define DEPENDENT		0x1		// Operating Mode Types
+#define DEPENDENT		0x1	// Operating Mode Types
 #define INDEPENDENT		0x0
-#define ACTIVE_HIGH		0x1		// Output Mode Types
+#define ACTIVE_HIGH		0x1	// Output Mode Types
 #define ACTIVE_LOW		0x0
-#define DEBOUNCE_TIME	50		// Input Switch Debounce Time (us)
+#define DEBOUNCE_TIME		50	// Input Switch Debounce Time (us)
 
 #ifndef __bool_true_false_are_defined
 #define true 1
