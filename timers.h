@@ -2,7 +2,7 @@
 * timers.h
 *
 *  Created: 7/25/2012 2:07:38 PM
-*  Modified: 8/20/2014 9:00 AM
+*  Modified: 7/30/2015 12:29 PM*  Author: DMH
 *  Author: DMH
 */
 
@@ -31,11 +31,11 @@
 #define bit_clear(p,m1) ((p) &= ~(m1))
 #define bit_write(c,p,m1) (c ? bit_set(p,m1) : bit_clear(p,m1))
 #define BIT(x) (0x01 << (x))
-#define bit(x) (BIT(x))
-#define bit_get(p,m1) ((p) & (bit(m1)))
+//#define bit(x) (BIT(x))
+#define bit_get(p,m1) ((p) & (BIT(m1)))
 
 volatile unsigned long timer0_millis;
-volatile static uint8_t timer0_fract;
+volatile uint8_t timer0_fract;
 
 unsigned long getTime(uint8_t pin);
 
