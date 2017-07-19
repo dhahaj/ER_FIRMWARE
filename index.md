@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <title>ER EExER Firmware by dhahaj</title>
+    <style>
+    sub { 
+     vertical-align: sub;
+     font-size: smaller;
+    }
+</style>
   </head>
   <body>
     <section class="page-header">
