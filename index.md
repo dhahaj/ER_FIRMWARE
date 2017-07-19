@@ -37,7 +37,7 @@
 	   active high/low outputs, and toggling features. The DIP switches are interrupt driven so changes are implemented
 	   immediately and the system auto adjusts depending on its current state. The order of events upon a trigger event is 
 	   as stated below. 
-<h3>Mode Definitions:</h3>   *Dependent Mode:* (IN1|IN2) &rarr; (DR1 ACTIVE)&rarr;(DELAY 0.5s)&rarr;(DR2 ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLY1 & RLY2)&rarr;(DELAY DS1)&rarr;(RETURN)
+<h3>Mode Definitions:</h3>   *Dependent Mode:* (IN1|IN2) &rarr; (DR<sub>1</sub> ACTIVE)&rarr;(DELAY 0.5s)&rarr;(DR2 ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLY1 & RLY2)&rarr;(DELAY DS1)&rarr;(RETURN)
    *Independent Mode:* (INx) &rarr; (DRx ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLYx)&rarr;(DELAY DSn)&rarr;(RETURN)
      <em><u>Operation in independent mode also requires the monitoring of the opposing door input during the delay time so that a</u>
      <u>triggering event is not missed. This is accomplished by controlling the timing and outputs outputs within the Timer1</u>
