@@ -28,6 +28,11 @@ a {
   .btn + .btn {
     margin-left: 1rem; }
 
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
