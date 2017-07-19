@@ -33,7 +33,8 @@ REVISION HISTORY:
 <strong>Compilation Info:</strong>
   Define a symbol named EExER with a value of 1 to compile the code for the EExER build version. Set the value to 0 to build the standard ER build version.
 
-<h3>Build Versions:</h3> *EExER* - This build essentially removes most of the features found in the ER code as it is not required. More specifically, no DIP setting features and trigger Relay1 before triggering the rest of the outputs.
+<h3>Build Versions:</h3> *EExER* - This build essentially removes most of the features found in the ER code as it is not required. More specifically, 
+     no DIP setting features and trigger Relay1 before triggering the rest of the outputs.
  *ER* - This version is compiled to be the standard ER firmware with the ability to use the entire feature set (e.g. the DIP switch settings). It allows for Dependent/Independent operation on dual doors, Active High/Low outputs, and Toggling features. The DIP switches are interrupt driven so changes are implemented immediately and the system auto adjusts depending on its current state. The order of events upon a trigger event is as follows: 
 <h3>Mode Definitions:</h3> *Dependent Mode:*  (INPUT1 | INPUT2) => (DOOR1 ACTIVE)->(DELAY 0.5s)->(DOOR2 ACTIVE)->(DELAY 0.5s)->(RELAY1 & RELAY2)->(DELAY DS1)->(RETURN)
  *Independent Mode:*  (INPUTn) => (DOORn ACTIVE)->(DELAY 0.5s)->(RELAYn)->(DELAY DSn)->(RETURN)
