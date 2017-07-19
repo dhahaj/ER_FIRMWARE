@@ -37,7 +37,7 @@
 	   immediately and the system auto adjusts depending on its current state. The order of events upon a trigger event is 
 	   as stated below. 
 <h3>Mode Definitions:</h3>   *Dependent Mode:* (IN<sub>1</sub>|IN<sub>2</sub>) &rarr; (DR<sub>1</sub> ACTIVE)&rarr;(DELAY 0.5s)&rarr;(DR<sub>2</sub> ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLY<sub>1</sub> & RLY<sub>2</sub>)&rarr;(DELAY DS<sub>1</sub>)&rarr;(RETURN)
-   *Independent Mode:* (INx) &rarr; (DRx ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLYx)&rarr;(DELAY DSn)&rarr;(RETURN)
+   *Independent Mode:* (IN<sub>x</sub>) &rarr; (DR<sub>x</sub> ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLY<sub>x</sub>)&rarr;(DELAY DS<sub>n</sub>)&rarr;(RETURN)
      <em><u>Operation in independent mode also requires the monitoring of the opposing door input during the delay time so that a</u>
      <u>triggering event is not missed. This is accomplished by controlling the timing and outputs outputs within the Timer1</u>
      <u>Compare Interrupt Service Routine Vector (see interrupts.c).</em></u>
@@ -48,7 +48,7 @@
    neither of these features will be used in this configuration.
    
  - The order of events when a trigger event occurs is as follows:
-    <em>(IN1|IN2) &rarr; (RLY1)&rarr;(DELAY 0.5s)&rarr;(DR1 ACTIVE)&rarr;(DELAY 0.5s)&rarr;(DR2 ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLY2)&rarr;(DELAY DS1)&rarr;(RETURN).</em>
+    <em>(IN<sub>1</sub>|IN<sub>2</sub>) &rarr; (RLY<sub>1</sub>)&rarr;(DELAY 0.5s)&rarr;(DR<sub>1</sub> ACTIVE)&rarr;(DELAY 0.5s)&rarr;(DR<sub>2</sub> ACTIVE)&rarr;(DELAY 0.5s)&rarr;(RLY<sub>2</sub>)&rarr;(DELAY DS<sub>1</sub>)&rarr;(RETURN).</em>
 	
 <b>Microcontroller:</b> Attiny88-AU MCU, TQFP 32A Package.
 <strong>Datasheets:</strong> <a href="http://www.atmel.com/Images/doc8008.pdf">Complete</a>, <a href="http://www.atmel.com/Images/8008S.pdf">Summary</a>
