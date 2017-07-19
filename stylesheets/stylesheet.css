@@ -63,11 +63,11 @@ a {
   .page-header {
     padding: 5rem 6rem; } }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 42em) and (max-width: 80em) {
   .page-header {
     padding: 3rem 4rem; } }
 
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 60em) {
   .page-header {
     padding: 2rem 1rem; } }
 
@@ -79,11 +79,11 @@ a {
   .project-name {
     font-size: 3.25rem; } }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 42em) and (max-width: 80em) {
   .project-name {
     font-size: 2.25rem; } }
 
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 60em) {
   .project-name {
     font-size: 1.75rem; } }
 
@@ -96,11 +96,11 @@ a {
   .project-tagline {
     font-size: 1.25rem; } }
 
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 42em) and (max-width: 80em) {
   .project-tagline {
     font-size: 1.15rem; } }
 
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 60em) {
   .project-tagline {
     font-size: 1rem; } }
 
