@@ -58,10 +58,12 @@ int main(void)
 	**/
 	while(1)
 	{
-
-  #if (EExER) /* EExER  */
-		if( buttonPressed(&INPUT_PIN_PORT, DR2_BUTTON) || buttonPressed(&INPUT_PIN_PORT, DR1_BUTTON) ) dependentRetract();
-  #else /* ER */
+/* EExER  */
+#if (EExER) 
+		// Just monitor the inputs
+    if( buttonPressed(&INPUT_PIN_PORT, DR2_BUTTON) || buttonPressed(&INPUT_PIN_PORT, DR1_BUTTON) ) 
+      dependentRetract();
+#else /* ER */
 
 		/**********************/
 		/**	DEPENDENT MODE	**/
